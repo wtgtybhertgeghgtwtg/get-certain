@@ -19,7 +19,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.0.0",
-    "builtin-modules": "^2.0.0",
+    "builtin-modules": "^3.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
