@@ -11,15 +11,15 @@
   },
   "description": "Assert a Map has a given key and return the value for it.",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.44",
-    "@babel/preset-env": "^7.0.0-beta.44",
-    "@babel/preset-flow": "^7.0.0-beta.44",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "@babel/preset-flow": "^7.0.0-beta.46",
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.0",
+    "@wtg/scripts": "^1.1.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "^23.0.0",
-    "builtin-modules": "^2.0.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -30,10 +30,7 @@
     "jest": "^23.0.0",
     "lint-staged": "^7.0.4",
     "prettier": "1.13.5",
-    "rimraf": "^2.6.2",
-    "rollup": "^0.58.1",
-    "rollup-plugin-babel": "^4.0.0-beta.4",
-    "write": "^1.0.3"
+    "rimraf": "^2.6.2"
   },
   "engines": {
     "node": ">=6"
@@ -51,7 +48,7 @@
     "url": "https://github.com/wtgtybhertgeghgtwtg/get-certain"
   },
   "scripts": {
-    "build": "node scripts/build",
+    "build": "wtg build",
     "clean": "rimraf coverage dist",
     "lint": "flow && eslint . && prettier --l \"{__tests__,src}/**/*.js\"",
     "test": "yarn test:src && yarn build && yarn test:dist",
