@@ -1,6 +1,5 @@
 // @flow
 import assert from 'assert';
-import isobject from 'isobject';
 
 export default function getCertain<Key, Value>(
   map: Map<Key, Value>,
@@ -8,9 +7,7 @@ export default function getCertain<Key, Value>(
   message: string = '"map" does not have an entry for "key".',
 ): Value {
   assert(
-    isobject(map) &&
-      typeof map.get === 'function' &&
-      typeof map.has === 'function',
+    map && typeof map.get === 'function' && typeof map.has === 'function',
     // Or at least look like a Map.
     '"map" must be a Map.',
   );
