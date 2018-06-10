@@ -6,9 +6,6 @@
   "bugs": {
     "url": "https://github.com/wtgtybhertgeghgtwtg/get-certain/issues"
   },
-  "dependencies": {
-    "isobject": "^3.0.1"
-  },
   "description": "Assert a Map has a given key and return the value for it.",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
