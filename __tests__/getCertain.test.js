@@ -1,15 +1,18 @@
-// flow
+// @flow
 import getCertain from '../src';
 
 describe('getCertain', () => {
   describe('invariants', () => {
     it('throws if "map" is undefined.', () => {
+      // $FlowFixMe
       expect(() => getCertain()).toThrow('"map" must be a Map.');
     });
     it('throws if "map" is not a Map-like object.', () => {
+      // $FlowFixMe
       expect(() => getCertain({has: 3})).toThrow('"map" must be a Map.');
     });
     it('throws if "message" is not a string or undefined.', () => {
+      // $FlowFixMe
       expect(() => getCertain(new Map(), 1, 1)).toThrow(
         '"message" must be a string or undefined.',
       );
