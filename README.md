@@ -1,4 +1,4 @@
-# sole-entry
+# get-certain
 
 > Assert a Map has a given key and return the value for it.
 
@@ -37,19 +37,19 @@ Returns the value from `map` for `key`, or throws if it is not there.
 
 #### map
 
-* Type: `Map`
+- Type: `Map`
 
 A Map. I hope you know what you're putting in there.
 
 #### key
 
-* Type: `any`
+- Type: `any`
 
 A key that is hopefully in `map`.
 
 #### message
 
-* Type: `string`
+- Type: `string`
 
 An optional message to throw. Defaults to '"map" does not have an entry for "key".', which isn't terribly descriptive.
 
